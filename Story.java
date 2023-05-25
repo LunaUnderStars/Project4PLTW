@@ -7,7 +7,7 @@ public class Story {
 
     public boolean play() {
         clearScreen();
-        System.out.println("You are Laila, and you wish to visit your Aziza at the orphanage.");
+        System.out.println("You are Laila, and you wish to visit your daughter Aziza at the orphanage.");
         System.out.println("Unfortunately, Rasheed refuses to accompany you on your way. You take it upon yourself to travel there alone.");
         System.out.println();
         System.out.println("(Press enter to continue)");
