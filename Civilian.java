@@ -1,8 +1,8 @@
 public class Civilian extends Person {
     private String activity;
 
-    public Civilian(String name, String hairColor, String clothing, int gender, String activity) {
-        super(name, hairColor, clothing, gender);
+    public Civilian(String name, String hairColor, int gender, String activity) {
+        super(name, hairColor, gender);
         this.activity = activity;
     }
 

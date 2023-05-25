@@ -1,18 +1,30 @@
+import java.util.Scanner;
+
 public class StoryRunner {
     public static void main(String[] args) {
-        Person p1 = new Person("Laila", "brown", "a hijab", 1);
+        Story story = new Story();
+        Scanner psc = new Scanner(System.in);
+        boolean playagain = true;
+        while (playagain) {
 
-        System.out.println(p1);
+            boolean gameWon = story.play();
+            if (!gameWon) {
+                Story.clearScreen();
+                System.out.println("You didn't make it to the the orphanage.");
+                
+            }
+            else {
+                System.out.println("You made it!");
+            }
 
-        Civilian c1 = new Civilian("Frank", "silver", " some tattered rags", 0, "watering flowers");
-        System.out.println(c1);
-
-
-
-
-
-
+            System.out.println("Would you like to play again? (y/n)");
+            String response = psc.nextLine().toLowerCase();
+            
+            if (response.equals("n")) {
+                playagain = false;
+            }
 
         
+        }       
     }
 }
